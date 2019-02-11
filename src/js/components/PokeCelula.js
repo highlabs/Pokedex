@@ -16,12 +16,14 @@ class PokeCelula extends React.Component {
 
     render() {
         return (
-            <button 
-                style={this.props.style} 
-                className="poke-cell"
-                onClick={() => this.onClick()}
-            >
-            </button>
+            <div className="col-md-4">
+                <button 
+                    style={this.props.style} 
+                    className="poke-cell"
+                    onClick={() => this.onClick()}
+                >
+                </button>
+            </div>
         );
     }
 }
