@@ -58,17 +58,17 @@ class PokeDex extends React.Component {
 
     render() {
         return (
-            <Row style={{height : '100px'}}>
-                <Col md={10} >
+            <Row>
+                <Col md={12} >
                     <Col 
-                        md={5} 
+                        md={6} 
                     >
                         <PokeTela
                             pokeFuncaoPegaDadosPokemon={(e) => this.pokeFuncaoPegaDadosPokemon(e)}
                             pokeClasses={pokeClasses}
                         />
                     </Col>
-                    <Col md={5}>
+                    <Col md={6}>
                         <PokeDetalhes 
                             pokeNome={this.state.pokeNome}
                             pokePeso={this.state.pokePeso}
