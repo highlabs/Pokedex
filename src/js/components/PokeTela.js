@@ -59,19 +59,18 @@ class PokeTela extends React.Component {
 
     pesquisa() {
 
-        if(this.state.pokeNomePesquisa == '' && this.state.pokeTipoPesquisa == '0') {
+        if(this.state.pokeNomePesquisa === '' && this.state.pokeTipoPesquisa === '0') {
             this.pokeChangePageHandler(1);
             return;
         }
 
         const pokemons = pokeClasses.filter(e => {
-            
-            if(this.state.pokeTipoPesquisa == '0' || this.state.pokeTipoPesquisa == 0) {
-                return e.name.indexOf(this.state.pokeNomePesquisa) != -1;
+            if(this.state.pokeTipoPesquisa === '0' || this.state.pokeTipoPesquisa === 0) {
+                return e.name.indexOf(this.state.pokeNomePesquisa) !== -1;
             }
             return (
-                e.type.indexOf(this.state.pokeTipoPesquisa) != -1 &&
-                e.name.indexOf(this.state.pokeNomePesquisa) != -1
+                e.type.indexOf(this.state.pokeTipoPesquisa) !== -1 &&
+                e.name.indexOf(this.state.pokeNomePesquisa) !== -1
             )
         })
 
