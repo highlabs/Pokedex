@@ -56,6 +56,10 @@ class PokeDex extends React.Component {
           });
     }
 
+    componentDidMount() {
+        this.pokeFuncaoPegaDadosPokemon({id: 1})
+    }
+
     render() {
         return (
             <Row>
