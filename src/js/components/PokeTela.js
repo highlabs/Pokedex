@@ -106,7 +106,7 @@ class PokeTela extends React.Component {
                             onChange={(e) => this.onChangeNome(e.target.value)}
                             type="text" 
                             className="form-control" 
-                            placeholder={'pokeSearch'} />
+                            placeholder={'Pikachu'} />
                     </Col>
                     <Col md={4}>
                         <label htmlFor="tipo">Tipo</label>
