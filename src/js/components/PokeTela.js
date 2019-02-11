@@ -139,7 +139,7 @@ class PokeTela extends React.Component {
 
                 {
                     this.state.pokemonsPagination.map((e, i) => {
-                        const { id, backgroundPosition } = e;
+                        const { backgroundPosition } = e;
                         const style = { backgroundImage: `url(${sprites})`, backgroundPosition };
 
                         return (
