@@ -29,25 +29,27 @@ class PokeDetalhes extends React.Component {
             alt={this.props.pokeNome}
           />
         </div>
-        <Row style={{ fontSize: "20px" }}>
-          <Col md={4}>
-            <p>
-              <b>Nome:&nbsp;</b>
-              {this.props.pokeNome}
-            </p>
-          </Col>
-          <Col md={3}>
-            <p>
-              <b>Peso:&nbsp;</b>
-              {this.props.pokePeso}
-            </p>
-          </Col>
-          <Col md={2}>
-            <p>
-              <b>Altura:&nbsp;</b>
-              {this.props.pokeAltura}
-            </p>
-          </Col>
+        <Row style={{ fontSize: "20px", display: 'flex' }}>
+          <div className="col-md-12"  style={{ display: 'flex'}}>
+            <div style={{marginRight: '5px'}}>
+                <p>
+                <b>Nome:&nbsp;</b>
+                {this.props.pokeNome}
+                </p>
+            </div>
+            <div style={{marginRight: '5px'}}>
+                <p>
+                <b>Peso:&nbsp;</b>
+                {this.props.pokePeso}
+                </p>
+            </div>
+            <div style={{marginRight: '5px'}}>
+                <p>
+                <b>Altura:&nbsp;</b>
+                {this.props.pokeAltura}
+                </p>
+            </div>
+          </div>
         </Row>
         <Row>
           <div style={{ marginTop: "30px" }} />
