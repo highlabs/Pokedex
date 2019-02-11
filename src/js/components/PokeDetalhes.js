@@ -25,7 +25,7 @@ class PokeDetalhes extends React.Component {
         >
           <img
             className="poke-cell"
-            src={this.props.pokeFoto}
+            src={this.props.pokeFoto || 'http://placehold.it/120x120?text=Loading...'}
             alt={this.props.pokeNome}
           />
         </div>
