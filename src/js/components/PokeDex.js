@@ -29,7 +29,7 @@ class PokeDex extends React.Component {
 
     pokeFuncaoPegaDadosPokemon(e) {
         axios
-          .get(`http://pokeapi.co/api/v2/pokemon/${e.id}/`)
+          .get(`https://pokeapi.co/api/v2/pokemon/${e.id}/`) // Faltou o https. ;)
           .then(response => {
 
             const tipos = response.data.types.map(e => {
@@ -51,7 +51,8 @@ class PokeDex extends React.Component {
             
           })
           .catch(function (error) {
-            alert('Houve um erro ao consultar a API');
+            // Adicionando o erro no console log, para que seja fácil de debugar.
+            console.warn(error)
           });
     }
 
