@@ -16,7 +16,7 @@ class PokeCelula extends React.Component {
 
     render() {
         return (
-            <div className="col-md-4">
+            <div className="col-md-4 col-xs-6 col-sm-4">
                 <button 
                     style={this.props.style} 
                     className="poke-cell"
